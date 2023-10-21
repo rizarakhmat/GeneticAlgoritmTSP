@@ -47,8 +47,10 @@ $ make vectorized
 $ make test
 ```
 
-Example of usage
+**Example of usage**
+```bash
 - ./demo 1 20 1000 4 1000
+```
 
 
 
