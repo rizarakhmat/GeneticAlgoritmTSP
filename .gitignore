@@ -1,0 +1,8 @@
+demo
+backup.txt
+results
+results/*
+.bash*
+.emacs*
+.X*
+.test*
