@@ -12,26 +12,40 @@ To test the correctness of the three versions developed, I saved for a run of ea
 ## Running the project
 The project can be compiled and executed using [Cmake 3.11](https://cmake.org/) or [GCC](https://gcc.gnu.org/) (remember to turn on -O3 optimization). 
 
-To compile
-- make compile
+**To compile**
+ ```bash
 
-To execute
+  $ make compile
+  ```
+
+**To execute**
+```bash
 - sequential version: ./demo 0 #NODES #POPULATION 0 #ITERATIONS
 - thread version: ./demo 1 #NODES #POPULATION 1 #ITERATIONS
 - fastflow version: ./demo 2 #NODES #POPLATION 2 #ITERATIONS
 
-To execute graphical version (NOTE: you have to install the graphics.h library)
-- make compile-graph
-- ./demo 0 #NODES #POPULATION 0 #ITERATIONS
+```
 
-To compile debug version
-- make compile-debug
+**To execute graphical version** (NOTE: you have to install the graphics.h library)
+```bash
+$ make compile-graph
+$ ./demo 0 #NODES #POPULATION 0 #ITERATIONS
+```
 
-To compile with inforation about vectorized loops
-- make vectorized
+**To compile debug version**
+```bash
+$ make compile-debug
+```
 
-To test the application (the parameters can be modified in the bash/test.sh file)
-- make test
+**To compile with inforation about vectorized loops**
+```bash
+$ make vectorized
+```
+
+**To test the application** (the parameters can be modified in the bash/test.sh file)
+```bash
+$ make test
+```
 
 Example of usage
 - ./demo 1 20 1000 4 1000
